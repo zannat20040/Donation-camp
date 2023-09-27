@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 // import { useLoaderData } from "react-router-dom";
 
 const Donation = () => {
-  // const dontaion = useLoaderData()
 
   const [displayDonated, setDisplayDonated] = useState([]);
   const [showAll, setShowAll] = useState(false);
@@ -12,14 +11,16 @@ const Donation = () => {
     setDisplayDonated(donationItem);
   }, []);
 
-  console.log(displayDonated);
+//   console.log(displayDonated);
 
   return (
-    <><div className="grid grid-cols-2 mt-6 gap-3 container mx-auto rounded-sm shadow-none">
+    <><div className="grid grid-cols-2 my-6  gap-3 container mx-auto rounded-sm shadow-none">
           {displayDonated.map((item, index) => (
               <div
                   className={` items-center card card-side bg-base-100 shadow-xl ${!showAll && index >= 4 ? "hidden" : ""}`}
-                  key={item.id}
+                  key={item.id} style={{
+                    backgroundColor: item.card_bg
+                }}
               >
                   <figure>
                       <img src={item.picture} className="w-auto mr-6" />
@@ -46,7 +47,9 @@ const Donation = () => {
                       <div className="card-actions justify-start mt-1">
                           <button
                               className="btn btn-primary rounded-md text-white border-0 "
-                              style={{ backgroundColor: item.text_button_bg_color }}
+                              style={{ backgroundColor: item.text_button_bg_color }} onClick={() => {
+                                window.location.href = `/details/${item.id}`;
+                              }}
                           >
                               View Details
                           </button>
@@ -59,7 +62,7 @@ const Donation = () => {
               {!showAll && (
                   <div>
                       <button
-                          className="btn bg-green-600 rounded-md text-white flex mt-10 border-0 mt-4 mx-auto"
+                          className="btn bg-green-600 rounded-md text-white flex mt-10 border-0 mx-auto"
                           onClick={() => setShowAll(true)}
                       >
                           Show All

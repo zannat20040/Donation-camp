@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <div>
-      <Header></Header>
+      <Header donations={donations}></Header>
       <div className=" mt-14 mb-14 container mx-auto card-container grid grid-cols-4 gap-4">
       {donations.map((data) => (
         <DonationCard data={data} key={data.id}></DonationCard>

@@ -10,7 +10,7 @@ const Details = () => {
   // console.log(findDetail);
 
   const handleDonation = () => {
-    // saveAllDonation(idInt)
+
 
     const addDonation = [];
 
@@ -33,7 +33,7 @@ const Details = () => {
     else {
        const isExist = donationItem.find(item => item.id ==id)
        if(!isExist){
-        // console.log('true')
+     
         addDonation.push(...donationItem,findDetail);
         localStorage.setItem("Donation List", JSON.stringify(addDonation));
   toast.success("Donation Success", {
@@ -76,7 +76,7 @@ const Details = () => {
           <div className="absolute w-full bg-black bottom-0 p-7 opacity-90">
             <button
               onClick={handleDonation}
-              className="btn bg-red-500 text-white border-0 rounded-none"
+              className="btn bg-red-500 text-white border-0 rounded-none" style={{backgroundColor:findDetail.text_button_bg_color}}
             >
               Donate {findDetail.price}
             </button>
