@@ -1,19 +1,42 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { saveAllDonation } from "./localstroage";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Details = () => {
-
   const details = useLoaderData();
   const { id } = useParams();
   const idInt = parseInt(id);
   const findDetail = details.find((item) => item.id === idInt);
-  console.log(findDetail);
+  // console.log(findDetail);
 
-  const handleDonation = () =>{
-    saveAllDonation(idInt)
-    toast.success('Donation Success', {
+  const handleDonation = () => {
+    // saveAllDonation(idInt)
+
+    const addDonation = [];
+
+    const donationItem = JSON.parse(localStorage.getItem("Donation List"));
+
+    if (!donationItem) {
+      addDonation.push(findDetail);
+      localStorage.setItem("Donation List", JSON.stringify(addDonation));
+      toast.success("Donation Success", {
+        position: "bottom-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    } 
+    else {
+       const isExist = donationItem.find(item => item.id ==id)
+       if(!isExist){
+        // console.log('true')
+        addDonation.push(...donationItem,findDetail);
+        localStorage.setItem("Donation List", JSON.stringify(addDonation));
+  toast.success("Donation Success", {
       position: "bottom-right",
       autoClose: 1000,
       hideProgressBar: false,
@@ -22,10 +45,24 @@ const Details = () => {
       draggable: true,
       progress: undefined,
       theme: "dark",
-      });   
+    });
+       }
+       else{
+        toast.error("You have already donated", {
+          position: "bottom-right",
+          autoClose: 1000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+       }
+    }
 
-}
-
+    
+  };
 
   return (
     <div className="container mx-auto mt-4">
@@ -37,9 +74,14 @@ const Details = () => {
             className="w-full h-96 rounded-none"
           />
           <div className="absolute w-full bg-black bottom-0 p-7 opacity-90">
-          <button onClick={handleDonation} className="btn bg-red-500 text-white border-0 rounded-none">Donate {findDetail.price}</button>
-          <ToastContainer />
-           </div>
+            <button
+              onClick={handleDonation}
+              className="btn bg-red-500 text-white border-0 rounded-none"
+            >
+              Donate {findDetail.price}
+            </button>
+            <ToastContainer />
+          </div>
         </figure>
       </div>
       <div className="">
