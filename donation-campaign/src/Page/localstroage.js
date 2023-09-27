@@ -1,18 +1,18 @@
 const storedAllDonation = () =>{
-    const getStore = localStorage.getItem('job-applications');
-    if(getStore){
-        return JSON.parse(getStore);
+    const getstores = localStorage.getItem('job-applications');
+    if(getstores) {
+        return JSON.parse(getstored) ;
     }
     return [];
 }
 
 
 const saveAllDonation = id =>{
-    const getStores = storedAllDonation();
-    const isStore = getStores.find(item => item === id);
+    const getstored  = storedAllDonation();
+    const isStore = getstored .find(item => item === id);
     if(!isStore){
-        getStores.push(id);
-        localStorage.setItem('Donation list', JSON.stringify(getStores))
+        getstored .push(id);
+        localStorage.setItem('Donation list', JSON.stringify(getstored ))
     }
 }
 
