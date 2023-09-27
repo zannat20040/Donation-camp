@@ -6,7 +6,6 @@ const Header = () => {
     <div>
       <div className="hero bg-base-200 navbarstyle">
         <div className=" mb-12 text-center container mx-auto flex flex-col">
-          <Navbar></Navbar>
           <div className="py-32">
             <h1 className="text-4xl font-bold mb-10">
               I Grow By Helping People In Need

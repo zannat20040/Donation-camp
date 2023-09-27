@@ -1,0 +1,136 @@
+[
+    {
+      "id":1,
+      "picture": "https://i.ibb.co/0cgjB4J/Rectangle-4284.png",
+      "title": "Clean water for children",
+      "category": "Health",
+      "category_bg": "rgba(0, 82, 255, 0.20)",
+      "text_button_bg_color": "#0052FF",
+      "card_bg": "#0052FF26",
+      "description": "Our mission is clear: to ensure that every child, regardless of their geographical location or socioeconomic background, has access to clean and safe water. We believe that clean water is a fundamental human right, and no child should suffer from waterborne diseases or endure the physical and emotional burdens caused by the lack of access to clean water sources.",
+      "price": "$290.00"
+    },
+    {
+      "id":2,
+      "picture": "https://i.ibb.co/28X1wDg/Rectangle-4287-1.png",
+      "title": "Good education",
+      "category": "Education",
+      "category_bg": "rgba(255, 68, 74, 0.20)",
+      "text_button_bg_color": "#FF444A",
+      "card_bg": "#FF444A26",
+      "description": "In our Good Education Campaign, we're on a mission to make quality education a reality for every child. We believe that education is not just about acquiring knowledge; it's about empowering young minds to dream, innovate, and create positive change in the world.",
+      "price": "$290.00"
+    },
+    {
+      "id":3,
+      "picture": "https://i.ibb.co/ZR9yDHC/Clothing.png",
+      "title": "Used Clothing Drive",
+      "category": "Clothing",
+      "category_bg": "rgba(121, 194, 63, 0.20)",
+      "text_button_bg_color": "#79C23F",
+      "card_bg": "#79C23F26",
+      "description": "As the seasons change and colder weather approaches, many in our community find themselves in need of warm clothing to stay comfortable and safe. Our Used Clothing Drive Campaign aims to make a difference by collecting and distributing gently used clothing items to those in need. Join us in spreading warmth and kindness throughout our community.",
+      "price": "$290.00"
+    },
+    {
+      "id":4,
+      "picture": "https://i.ibb.co/KzGqsHd/Food.png",
+      "title": "Better Food for Everyone",
+      "category": "Food",
+      "category_bg": "rgba(248, 113, 71, 0.20)",
+      "text_button_bg_color": "#F87147",
+      "card_bg": "#F8714726",
+      "description": "At the heart of our mission lies a simple belief: everyone deserves access to nourishing and wholesome food. We envision a world where no child goes to school on an empty stomach, where families have the means to put a balanced meal on the table, and where communities thrive because they are well-fed and healthy.",
+      "price": "$290.00"
+    },
+    {
+      "id":5,
+      "picture": "https://i.ibb.co/KzGqsHd/Food.png",
+      "title": "Better Food for Everyone",
+      "category": "Food",
+      "category_bg": "rgba(248, 113, 71, 0.20)",
+      "text_button_bg_color": "#F87147",
+      "card_bg": "#F8714726",
+      "description": "At the heart of our mission lies a simple belief: everyone deserves access to nourishing and wholesome food. We envision a world where no child goes to school on an empty stomach, where families have the means to put a balanced meal on the table, and where communities thrive because they are well-fed and healthy.",
+      "price": "$290.00"
+    },
+    {
+      "id":6,
+      "picture": "https://i.ibb.co/ZR9yDHC/Clothing.png",
+      "title": "Used Clothing Drive",
+      "category": "Clothing",
+      "category_bg": "rgba(121, 194, 63, 0.20)",
+      "text_button_bg_color": "#79C23F",
+      "card_bg": "#79C23F26",
+      "description": "As the seasons change and colder weather approaches, many in our community find themselves in need of warm clothing to stay comfortable and safe. Our Used Clothing Drive Campaign aims to make a difference by collecting and distributing gently used clothing items to those in need. Join us in spreading warmth and kindness throughout our community.",
+      "price": "$290.00"
+    },
+    {
+      "id":7,
+      "picture": "https://i.ibb.co/28X1wDg/Rectangle-4287-1.png",
+      "title": "Good education",
+      "category": "Education",
+      "category_bg": "rgba(255, 68, 74, 0.20)",
+      "text_button_bg_color": "#FF444A",
+      "card_bg": "#FF444A26",
+      "description": "In our Good Education Campaign, we're on a mission to make quality education a reality for every child. We believe that education is not just about acquiring knowledge; it's about empowering young minds to dream, innovate, and create positive change in the world.",
+      "price": "$290.00"
+    },
+    {
+      "id":8,
+      "picture": "https://i.ibb.co/0cgjB4J/Rectangle-4284.png",
+      "title": "Clean water for children",
+      "category": "Health",
+      "category_bg": "rgba(0, 82, 255, 0.20)",
+      "text_button_bg_color": "#0052FF",
+      "card_bg": "#0052FF26",
+      "description": "Our mission is clear: to ensure that every child, regardless of their geographical location or socioeconomic background, has access to clean and safe water. We believe that clean water is a fundamental human right, and no child should suffer from waterborne diseases or endure the physical and emotional burdens caused by the lack of access to clean water sources.",
+      "price": "$290.00"
+    },
+    {
+      "id":9,
+      "picture": "https://i.ibb.co/0cgjB4J/Rectangle-4284.png",
+      "title": "Clean water for children",
+      "category": "Health",
+      "category_bg": "rgba(0, 82, 255, 0.20)",
+      "text_button_bg_color": "#0052FF",
+      "card_bg": "#0052FF26",
+      "description": "Our mission is clear: to ensure that every child, regardless of their geographical location or socioeconomic background, has access to clean and safe water. We believe that clean water is a fundamental human right, and no child should suffer from waterborne diseases or endure the physical and emotional burdens caused by the lack of access to clean water sources.",
+      "price": "$290.00"
+    },
+    {
+      "id":10,
+      "picture": "https://i.ibb.co/28X1wDg/Rectangle-4287-1.png",
+      "title": "Good education",
+      "category": "Education",
+      "category_bg": "rgba(255, 68, 74, 0.20)",
+      "text_button_bg_color": "#FF444A",
+      "card_bg": "#FF444A26",
+      "description": "In our Good Education Campaign, we're on a mission to make quality education a reality for every child. We believe that education is not just about acquiring knowledge; it's about empowering young minds to dream, innovate, and create positive change in the world.",
+      "price": "$290.00"
+    },
+    {
+      "id":11,
+      "picture": "https://i.ibb.co/ZR9yDHC/Clothing.png",
+      "title": "Used Clothing Drive",
+      "category": "Clothing",
+      "category_bg": "rgba(121, 194, 63, 0.20)",
+      "text_button_bg_color": "#79C23F",
+      "card_bg": "#79C23F26",
+      "description": "As the seasons change and colder weather approaches, many in our community find themselves in need of warm clothing to stay comfortable and safe. Our Used Clothing Drive Campaign aims to make a difference by collecting and distributing gently used clothing items to those in need. Join us in spreading warmth and kindness throughout our community.",
+      "price": "$290.00"
+    },
+    {
+      "id":12,
+      "picture": "https://i.ibb.co/KzGqsHd/Food.png",
+      "title": "Better Food for Everyone",
+      "category": "Food",
+      "category_bg": "rgba(248, 113, 71, 0.20)",
+      "text_button_bg_color": "#F87147",
+      "card_bg": "#F8714726",
+      "description": "At the heart of our mission lies a simple belief: everyone deserves access to nourishing and wholesome food. We envision a world where no child goes to school on an empty stomach, where families have the means to put a balanced meal on the table, and where communities thrive because they are well-fed and healthy.",
+      "price": "$290.00"
+    }
+  
+  ]
+  
