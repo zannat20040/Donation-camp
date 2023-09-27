@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { saveAllDonation } from "./localstroage";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Details = () => {
 
@@ -8,6 +10,22 @@ const Details = () => {
   const idInt = parseInt(id);
   const findDetail = details.find((item) => item.id === idInt);
   console.log(findDetail);
+
+  const handleDonation = () =>{
+    saveAllDonation(idInt)
+    toast.success('Donation Success', {
+      position: "bottom-right",
+      autoClose: 1000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      });   
+
+}
+
 
   return (
     <div className="container mx-auto mt-4">
@@ -19,8 +37,9 @@ const Details = () => {
             className="w-full h-96 rounded-none"
           />
           <div className="absolute w-full bg-black bottom-0 p-7 opacity-90">
-          <button className="btn bg-red-500 text-white border-0 rounded-none">Donate {findDetail.price}</button>
-          </div>
+          <button onClick={handleDonation} className="btn bg-red-500 text-white border-0 rounded-none">Donate {findDetail.price}</button>
+          <ToastContainer />
+           </div>
         </figure>
       </div>
       <div className="">
