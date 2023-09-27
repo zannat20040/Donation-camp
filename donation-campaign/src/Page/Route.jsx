@@ -5,10 +5,12 @@ import Home from "./Home";
 import Donation from "./Donation";
 import Statistics from "./Statistics";
 import Details from "./Details";
+import ErrorPage from "./ErrorPage";
 
 const Route = createBrowserRouter([
   {
     path: "/",
+    errorElement: <ErrorPage></ErrorPage>,
     element: <Root></Root>,
     children: [
       {

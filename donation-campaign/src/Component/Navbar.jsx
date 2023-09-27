@@ -4,13 +4,13 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="py-2 container mx-auto ">
-      <div className="flex justify-between items-center ">
+      <div className="flex justify-between items-center flex-col md:flex-row gap-6">
         <img src="https://i.ibb.co/rZ6Ww8R/Logo.png" alt="" />
         <div className="">
             <ul className="flex gap-10 font-semibold ">
             <li>
               <NavLink
-                to="/home"
+                to="/"
                 className={({ isActive, isPending }) =>
                   isPending
                     ? "pending"

@@ -76,10 +76,10 @@ const DonationChart = () => {
         </PieChart>
       </div>
 
-      <div className="flex items-center justify-center gap-3 ">
+      <div className="flex items-center justify-center gap-2 ">
         <div className="donation">Your Donation </div>
         <span className="w-16 h-1 bg-red-500 flex"></span>
-        <div className="Remaining ml-6">Total Donation </div>
+        <div className="Remaining ml-3">Total Donation </div>
         <span className="w-16 h-1 bg-emerald-500 flex"></span>
       </div>
     </div>
